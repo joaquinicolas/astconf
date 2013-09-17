@@ -10,7 +10,6 @@
 				$apartado += 1;
 			}
 			if($apartado == $val){
-
 					array_push($borrln, $i);
 			}
 		}

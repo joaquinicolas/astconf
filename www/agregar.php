@@ -12,7 +12,19 @@
 		$plop = $_GET['plop'];
 		$i = $_GET['plus'];
 		$i = $i;
-
+		$f = file("./sip.conf");
+		$lineas = count($f);
+		for($i=0; $i < $lineas; $i++){
+			$tmp =  $f[$i];
+			if ($tmp[0] == '['){
+				$tmp2 = explode(']', $tmp);
+				$nombrear = str_replace("[", " ", $tmp2[0]);
+				if ($nombrear == $nombre){
+					echo "ERROR: Nombre repetido";
+					exit();
+				}
+			}
+		}
 		if($nombre){
 				$sal = "[$nombre]";
 				if($plantilla && $plop !== 2){
