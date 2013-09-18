@@ -41,7 +41,7 @@
 				$val2 = explode(']', $val);
 				//unset($val2[0]);
 				$nombre = str_replace("[", "", $val2[0]) ;
-				echo "<p class='item'><span class='bold'><p class='itnom'>Nombre:</p></span><input type='text' class='entry' name='nombre' value='$nombre'></p>";
+				echo "<p class='item'><span class='bold'><p class='itnom'>Nombre:</p></span><input type='hidden' class='entry' name='nombre' value='$nombre'>$nombre</p>";
 				if($val2[1][0] == '('){
 					if($val2[1][1] == '!'){
 						echo "<p class='item'><span class='bold'><p class='itnom'>(Plantilla)</p></span></p>\n<script type='text/javascript'>a = 1;</script>";
