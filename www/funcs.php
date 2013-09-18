@@ -1,7 +1,7 @@
 <?php
 function barnav($a){
 	$sal = "<nav>
-		<div class='mnp_items' id='op1'>Cuentas de Usuario</div><div class='mnp_items' id='op2'>IVR</div>
+		<div class='mnp_items' id='op1'>Internos</div><div class='mnp_items' id='op2'>IVR</div>
 	</nav>
 	";
 	$sal .="<script type='text/javascript'>
