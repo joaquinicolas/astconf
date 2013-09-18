@@ -103,7 +103,7 @@
 	</script>
 </section>
 <aside>
-	<div id="menu-usr"><ul><li id='usuarios' onclick="usuarios()">Usuarios</li><li id='plantillas' onclick="plantillas()">Plantillas</li></ul></div>
+	<div id="menu-usr"><ul><li id='usuarios' onclick="usuarios()">Usuarios</li><li id='Perfiles' onclick="plantillas()">Plantillas</li></ul></div>
 	<div id='usuariosl'>
 	<?php
 		echo $nomul;
